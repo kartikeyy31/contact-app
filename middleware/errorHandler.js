@@ -23,7 +23,7 @@ const errorHandler = (err, req, res, next) => {
             break;
         default:
             console.log("No Error, all good !");
-            // res.json({ title: "No Error, all good", message: err.message, stackTrace: err.stack});
+            res.json({ title: "No Error, all good", message: err.message, stackTrace: err.stack});
             break;
     }
 };
